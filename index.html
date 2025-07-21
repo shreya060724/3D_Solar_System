@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Solar System Simulation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="canvas-container">
+    <canvas id="three-canvas"></canvas>
+
+    <div id="floating-controls">
+      <button id="controls-btn" class="floating-btn controls-btn" title="Controls">⚙️</button>
+      <button id="pause-btn" class="floating-btn pause-btn" title="Pause">⏸️</button>
+      <button id="theme-btn" class="floating-btn theme-btn" title="Theme">🌙</button>
+      <button id="reset-btn" class="floating-btn reset-btn" title="Reset">🔄</button>
+    </div>
+
+    <div id="control-panel">
+      <div class="control-group">
+        <h3>Planet Speed Controls</h3>
+        <div id="planet-controls"></div>
+      </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <div id="loading" class="loading">
+      <div class="loading-spinner"></div>
+      <div>Loading Solar System...</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
